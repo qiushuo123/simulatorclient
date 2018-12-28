@@ -1,0 +1,16 @@
+syntax = "proto3";
+package grpcserver;
+option java_package = "com.example.grpcserver.service";
+service UserRpcService{
+    rpc getUserById(TestRequest) returns (TestResponse);
+}
+
+message TestRequest{
+    int64 id = 1;
+}
+
+message TestResponse{
+    int64 id = 1;
+    string username = 2;
+    int64 age =3;
+}

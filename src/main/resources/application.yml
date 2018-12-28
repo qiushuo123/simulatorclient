@@ -1,0 +1,15 @@
+# service config
+server:
+  port: 8082
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.20.16.45:3306/spring_cloud?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+
+grpcserver:
+  host: 127.0.0.1
+  port: 50010
+  timeout: 5000
